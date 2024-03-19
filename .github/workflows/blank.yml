@@ -1,0 +1,23 @@
+name: CI Pipeline
+ 
+# Define when the workflow should be triggered
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+ 
+      - name: Build
+        run: |
+          echo "Building the project..."
+     
+      - name: Test
+        run: |
+          echo "Running tests..."
