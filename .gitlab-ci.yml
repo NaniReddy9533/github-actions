@@ -1,0 +1,17 @@
+# This is an example GitLab CI/CD pipeline configuration
+ 
+# Define stages that jobs will run in
+stages:
+  - build
+  - test
+ 
+# Define jobs for each stage
+build_job:
+  stage: build
+  script:
+    - echo "Building the project..."
+ 
+test_job:
+  stage: test
+  script:
+    - echo "Running tests..."
